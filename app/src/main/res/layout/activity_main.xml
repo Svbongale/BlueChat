@@ -6,29 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ListView
+    <LinearLayout
         android:id="@+id/list_conversation"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="60dp"
-        android:background="#efefef"/>
+        android:background="#efefef">
+
+        <EditText
+            android:id="@+id/ed_enter_message"
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true">
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="100dp"
-            android:layout_marginRight="100dp"
-            android:id="@+id/ed_enter_message"/>
 
         <Button
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="@string/str_label_btn_send" />
-</RelativeLayout>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+    </RelativeLayout>
 
 </RelativeLayout>
 
